@@ -11,6 +11,7 @@
         <div id="dashboard">
             <img src="" alt="" class="icon">
             <div class="dashOption">Dashboard</div>
+            <div id="emptyDiv"></div>
             <img src="" alt="" class="icon">
             <div class="dashOption">Home</div>
             <img src="" alt="" class="icon">
@@ -31,15 +32,40 @@
             <div class="dashOption">Privacy</div>
         </div>
         <div id="userBox">
-            <div class="userOptions"></div>
-            <div class="userOptions"></div>
-            <div class="userOptions"></div>
-            <div class="userOptions"></div>
+            <div class="userOptions">
+                <form action="get">
+                    <button type="submit"><img src="" alt="searchGlass"></button>
+                    <input type="text">
+                </form>
+            </div>
+            <div class="userOptions">
+                <img src="" alt="">
+                <img src="" alt="">
+                <span id="name">Morgan Oakley</span>
+            </div>
+            <div class="userOptions">
+                <img src="" alt="">
+                <div>
+                    <p id="upwardText">Hi there,</p>
+                    <p id="lowerText">Morgan Oakley (@morgan)</p>
+                </div>
+            </div>
+            <div class="userOptions">
+                <button class="blueButton">New</button>
+                <button class="blueButton">Upload</button>
+                <button class="blueButton">Share</button>
+            </div>
         </div>
         <div id="projectsBox">
-            <div id="yourProjects"></div>
-            <div id="announcements"></div>
-            <div id="trending"></div>
+            <div id="yourProjects">
+                <div class="titles">Your Projects</div>
+            </div>
+            <div id="announcements">
+                <div class="titles">Announcements</div>
+            </div>
+            <div id="trending">
+                <div class="titles">Trending</div>
+            </div>
         </div>
     </div>
 </body>
