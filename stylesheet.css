@@ -23,14 +23,16 @@ body{
     grid-row: 1 / 3;
     display:grid;
     grid-template-columns: minmax(0.3cm,0.9cm) auto;
-    grid-template-rows: repeat(11,minmax(1cm,1.5cm));
-    justify-content: baseline;  
+    grid-template-rows: minmax(1cm,1.5cm) 0.8cm repeat(6,minmax(0.5cm,1cm)) 0.8cm repeat(3,minmax(0.5cm,1cm));
+    justify-content: baseline; 
+    
 }
 
 .dashOption{
     align-self: center;
     justify-self: baseline;
-    font-size: smaller;
+    font-size:small;
+    font-weight: bolder;
 }
 .icon{
     align-self: center;
@@ -50,6 +52,16 @@ body{
     align-self: center; /* There's an extra row, maybe start home from there */
 }
 
+#emptySpaceOne{
+    grid-row:2 / 3;
+    grid-column: 1 / 3;
+    max-height: 1cm;
+}
+#emptySpaceTwo{
+    grid-row: 9 / 10;
+    grid-column: 1 / 3;
+    max-height: 1cm;
+}
 
 #userBox{
     display:grid;
