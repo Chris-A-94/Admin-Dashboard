@@ -49,7 +49,7 @@ body{
 #firstIcon{
     max-height: 1.2cm;
     grid-row: 1 / 2;
-    align-self: center; /* There's an extra row, maybe start home from there */
+    align-self: center; 
 }
 
 #emptySpaceOne{
@@ -69,6 +69,59 @@ body{
     grid-template-rows: repeat(2,auto);
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    justify-content: space-around;
+}
+
+#bigProfilePic{
+    max-height: 1.5cm;
+    max-width: auto;
+    border-radius: 50%;
+}
+.profilePics{
+    max-height: 1cm;
+    max-width: auto;
+    border-radius: 50%;
+}
+#lupeBut{
+    background-color: white;
+    border:none;
+}
+.lupe{
+    height: 0.5cm;
+    background-color: white;
+}
+
+.blueButton{
+    color:white;
+    min-width: 2cm;
+    background-color: rgb(86, 194, 244);
+    border-radius: 50px;
+    border:none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-small;
+    padding: 0.2cm 0.6cm 0.2cm;
+}
+
+#topLeftUser{
+    display:flex;
+    padding:0.1cm;
+    padding-left: 1cm;
+}
+
+#bottonLeftUser{
+    display:flex;
+    gap:0.5cm;
+    align-items: center;
+    padding-left: 1cm;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#textInput{
+    background-color: lightgray;
+    border: none;
+    flex:1;
+    border-radius: 20px;
 }
 
 #projectsBox{
