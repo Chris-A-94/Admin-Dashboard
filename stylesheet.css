@@ -1,10 +1,16 @@
 html{
     height: 100%;
+
+}
+
+body{
+    padding:0;
+    margin:0;
 }
 
 #container{
     display:grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: auto 1fr;
 }
 
@@ -15,7 +21,35 @@ html{
     font-family: Arial, Helvetica, sans-serif;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+    display:grid;
+    grid-template-columns: minmax(0.3cm,0.9cm) auto;
+    grid-template-rows: repeat(11,minmax(1cm,1.5cm));
+    justify-content: baseline;  
 }
+
+.dashOption{
+    align-self: center;
+    justify-self: baseline;
+    font-size: smaller;
+}
+.icon{
+    align-self: center;
+    justify-self: center;
+    max-height: 0.5cm;
+    fill:white;    
+}
+
+#dashTitle{
+    align-self:center;
+    font-size:larger;
+   grid-row: 1 / 2;
+}
+#firstIcon{
+    max-height: 1.2cm;
+    grid-row: 1 / 2;
+    align-self: center; /* There's an extra row, maybe start home from there */
+}
+
 
 #userBox{
     display:grid;
