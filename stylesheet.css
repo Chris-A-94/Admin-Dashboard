@@ -70,6 +70,9 @@ body{
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     justify-content: space-around;
+    border-bottom:inset;
+    row-gap: 0.35cm;
+    padding-bottom: 0.2cm;
 }
 
 #bigProfilePic{
@@ -117,11 +120,36 @@ body{
     font-weight: bold;
 }
 
+p{
+    margin:0;
+}
+
+#upwardText{
+    font-size: x-small;
+}
+
 #textInput{
     background-color: lightgray;
     border: none;
     flex:1;
     border-radius: 20px;
+}
+
+#topRightUser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.5cm;
+    font-family: arial;
+    font-size: small;
+    font-weight:900;
+}
+
+#bottomRightUser{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    gap:1cm;
 }
 
 #projectsBox{
