@@ -154,12 +154,13 @@ p{
 
 #projectsBox{
     display:grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     background-color: rgb(215, 234, 240);
     padding-right:1cm;
+    padding-bottom: 1cm;
 }
 
 .titles{
@@ -232,7 +233,31 @@ p{
 #trending{
     grid-row: 2 / 3;
     grid-column: 2 / 3;
+    margin-top: 1cm;
 }
+
+#profiles{
+    background-color: white;
+    border-radius: 5%;
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: repeat(4,1fr);
+    row-gap: 0.5cm;    
+    padding: 0.5cm;
+    box-shadow: 0px 5px 5px 0px gray;
+}
+
+.fullUserName{
+    color:gray;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.userTag{
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 
 .projectBoxes{
     border:solid;
